@@ -4,6 +4,7 @@ import Intro from '../components/sections/Intro';
 import Popular from '../components/sections/popular';
 import Services from '../components/sections/services';
 import AboutUs from '../components/sections/about';
+import Menus from '../components/sections/menus';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Popular></Popular>
       <Services></Services>
       <AboutUs></AboutUs>
+      <Menus></Menus>
     </Container>
   );
 }

@@ -8,6 +8,10 @@ const Card = function (props) {
     filter: 'drop-shadow(10px 10px 32px rgba(0, 0, 0, 0.25))',
   };
 
+  const cardShadowSm = {
+    filter: 'drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.16))',
+  };
+
   const innerCardStyles = {
     background:
       'linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 100%)',
@@ -16,7 +20,7 @@ const Card = function (props) {
   };
 
   return (
-    <GridItem sx={cardShadow} minH={96}>
+    <GridItem sx={props.isPopular ? cardShadow : cardShadowSm} minH={96}>
       <Flex
         direction='column'
         sx={props.isPopular ? innerCardStyles : ''}
@@ -49,6 +53,21 @@ const Card = function (props) {
                     <Serving key={i} servingType={servingType} />
                   ))}
                 </Flex>
+                <AddToCartIcon />
+              </Flex>
+            ) : (
+              ''
+            )}
+            {props.description ? (
+              <Flex justifyContent={'space-between'} mt='2' alignItems='center'>
+                <Text
+                  color='brand.500'
+                  fontSize='sm'
+                  fontWeight={600}
+                  maxW='40'
+                >
+                  {props.description}
+                </Text>
                 <AddToCartIcon />
               </Flex>
             ) : (
