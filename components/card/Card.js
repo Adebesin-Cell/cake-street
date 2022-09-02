@@ -1,5 +1,7 @@
 import { Box, Heading, Text, GridItem, Flex, Img } from '@chakra-ui/react';
+import AddToCartIcon from '../cart/AddToCartIcon';
 import Rating from '../rating/Rating';
+import Serving from '../serving/Serving';
 
 const Card = function (props) {
   const cardShadow = {
@@ -40,6 +42,18 @@ const Card = function (props) {
                 {props.price}
               </Heading>
             </Flex>
+            {props.servingTypes ? (
+              <Flex justifyContent={'space-between'} mt='4'>
+                <Flex gap='4'>
+                  {props.servingTypes.map((servingType, i) => (
+                    <Serving key={i} servingType={servingType} />
+                  ))}
+                </Flex>
+                <AddToCartIcon />
+              </Flex>
+            ) : (
+              ''
+            )}
           </Box>
         </Box>
       </Flex>
