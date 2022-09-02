@@ -3,6 +3,7 @@ import CardImage from '../../assets/images/image--1.png';
 import CardImageOne from '../../assets/images/image--2.png';
 import CardImageTwo from '../../assets/images/image--3.png';
 import Card from '../card/Card';
+import Underline from '../underline/Underline';
 
 const Popular = function () {
   return (
@@ -13,16 +14,7 @@ const Popular = function () {
           <Text as='span' pos='relative'>
             {' '}
             Now
-            <Box
-              as='span'
-              pos='absolute'
-              bottom={0}
-              left={0}
-              w='full'
-              h='4px'
-              borderRadius='12'
-              bg='brand.50'
-            ></Box>
+            <Underline />
           </Text>
         </Heading>
         <Grid gap={10} templateColumns='repeat(3, 1fr)' mt={10}>

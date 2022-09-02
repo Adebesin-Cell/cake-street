@@ -14,14 +14,9 @@ import CartIconFilled from '../../assets/images/icon-cart_fill.svg';
 import Hero from '../../assets/images/hero-img.png';
 import Image from 'next/image';
 import { ShoppingCartIcon } from '../../utils/icons/Icons';
+import IntroBtn from '../intro/IntroBtn';
 
 const Intro = function () {
-  const orderBtnStyles = {
-    background: '#2F2105',
-    boxShadow: '0px 4px 32px rgba(223, 195, 124, 0.25)',
-    borderRadius: '33px',
-  };
-
   return (
     <Box
       as='section'
@@ -50,15 +45,7 @@ const Intro = function () {
               in the morning
             </Text>
             <Flex mt={8} columnGap={6}>
-              <Btn
-                display='flex'
-                sx={orderBtnStyles}
-                variant='unstyled'
-                h={12}
-                pr={8}
-                pl={8}
-                alignItems='center'
-              >
+              <IntroBtn hasBg={true}>
                 <Text color='white' mr={2.5}>
                   Order now
                 </Text>
@@ -73,17 +60,10 @@ const Intro = function () {
                 >
                   <ShoppingCartIcon width={3} height={3} color='#fff' />
                 </Flex>
-              </Btn>
-              <Btn
-                display='flex'
-                variant='unstyled'
-                h={12}
-                pr={8}
-                pl={8}
-                alignItems='center'
-              >
+              </IntroBtn>
+              <IntroBtn>
                 <Text color='brand.150'>More menu</Text>
-              </Btn>
+              </IntroBtn>
             </Flex>
           </GridItem>
           <GridItem>

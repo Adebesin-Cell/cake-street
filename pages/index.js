@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { Container } from '@chakra-ui/react';
 import Intro from '../components/sections/Intro';
 import Popular from '../components/sections/popular';
+import Services from '../components/sections/services';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <Intro></Intro>
       <Popular></Popular>
+      <Services></Services>
     </Container>
   );
 }
