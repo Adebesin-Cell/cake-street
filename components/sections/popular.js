@@ -3,20 +3,14 @@ import CardImage from '../../assets/images/image--1.png';
 import CardImageOne from '../../assets/images/image--2.png';
 import CardImageTwo from '../../assets/images/image--3.png';
 import Card from '../card/Card';
+import SectionTitle from '../ui/title/SectionTitle';
 import Underline from '../underline/Underline';
 
 const Popular = function () {
   return (
     <Box as='section' mt='-96' pt={20} pos='relative'>
       <Container pos='relative' zIndex={2} maxW='container.xl' p='0' pb='40'>
-        <Heading display='flex' gap='10px' fontSize={32} color='black'>
-          Popular
-          <Text as='span' pos='relative'>
-            {' '}
-            Now
-            <Underline />
-          </Text>
-        </Heading>
+        <SectionTitle text='Popular' subText='Now' />
         <Grid gap={10} templateColumns='repeat(3, 1fr)' mt={10}>
           <Card
             title='Vanilla Latte'
