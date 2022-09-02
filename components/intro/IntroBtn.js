@@ -16,6 +16,7 @@ const IntroBtn = function (props) {
       pr={8}
       pl={8}
       alignItems='center'
+      {...props}
     >
       {props.children}
     </Btn>
