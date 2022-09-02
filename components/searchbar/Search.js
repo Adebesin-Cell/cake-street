@@ -18,14 +18,16 @@ const Search = function () {
       px={3.5}
       height={10}
       alignItems='center'
-      mr={8}
+      mr={6}
     >
       <Image src={SearchIcon} width='19' height='19' alt='search icon'></Image>
       <FormInput
-        pl={2}
+        pl={3}
         flexGrow={1}
         variant='unstyled'
         placeholder='Cappuccino'
+        fontSize={12}
+        color='brand.100'
       />
     </Flex>
   );

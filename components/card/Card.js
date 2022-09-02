@@ -1,4 +1,5 @@
 import { Box, Heading, Text, GridItem, Flex, Img } from '@chakra-ui/react';
+import Rating from '../rating/Rating';
 
 const Card = function (props) {
   const cardShadow = {
@@ -28,11 +29,16 @@ const Card = function (props) {
               w='full'
               alt={props.title}
             ></Img>
+            <Rating rating={props.rating} />
           </Box>
           <Box p='2.5' pt='5'>
             <Flex alignItems='center' justifyContent='space-between'>
-              <Heading>{props.title}</Heading>
-              <Heading>{props.price}</Heading>
+              <Heading color='brand.900' fontSize={'2xl'}>
+                {props.title}
+              </Heading>
+              <Heading color='brand.900' fontSize={'2xl'}>
+                {props.price}
+              </Heading>
             </Flex>
           </Box>
         </Box>
