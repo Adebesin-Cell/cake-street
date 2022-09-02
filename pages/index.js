@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { Container } from '@chakra-ui/react';
 import Intro from '../components/sections/Intro';
+import Popular from '../components/sections/popular';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Intro></Intro>
+      <Popular></Popular>
     </Container>
   );
 }

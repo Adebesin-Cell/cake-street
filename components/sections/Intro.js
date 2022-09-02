@@ -29,7 +29,7 @@ const Intro = function () {
       bgRepeat='no-repeat'
     >
       <Header />
-      <Container maxW='container.xl' p='0' mb='40'>
+      <Container maxW='container.xl' p='0' pb={96}>
         <Grid templateColumns='repeat(2, 1fr)' pt={20} gap={10}>
           <GridItem>
             <Heading>

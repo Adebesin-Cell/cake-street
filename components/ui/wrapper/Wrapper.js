@@ -1,7 +1,7 @@
 import { Box } from '@chakra-ui/react';
 
-const Card = function (props) {
+const Wrapper = function (props) {
   return <Box {...props}>{props.children}</Box>;
 };
 
-export default Card;
+export default Wrapper;
