@@ -1,4 +1,5 @@
 import { Box, Container, Grid, GridItem, Text } from '@chakra-ui/react';
+import TestimonialList from '../testimonial/TestimonialList';
 import SectionTitle from '../ui/title/SectionTitle';
 
 const Testimonial = function () {
@@ -6,7 +7,6 @@ const Testimonial = function () {
     <Box
       as='section'
       mt='32'
-      mb='32'
       pt='28'
       bgSize='65%'
       bgRepeat={'no-repeat'}
@@ -21,7 +21,9 @@ const Testimonial = function () {
               of coffee
             </Text>
           </GridItem>
-          <GridItem></GridItem>
+          <GridItem>
+            <TestimonialList></TestimonialList>
+          </GridItem>
         </Grid>
       </Container>
     </Box>

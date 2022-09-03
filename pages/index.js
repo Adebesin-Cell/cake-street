@@ -6,6 +6,7 @@ import Services from '../components/sections/services';
 import AboutUs from '../components/sections/about';
 import Menus from '../components/sections/menus';
 import Testimonial from '../components/sections/testimonial';
+import NewsLetter from '../components/sections/newsletter';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <AboutUs></AboutUs>
       <Menus></Menus>
       <Testimonial></Testimonial>
+      <NewsLetter></NewsLetter>
     </Container>
   );
 }

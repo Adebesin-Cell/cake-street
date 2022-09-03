@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/react';
+import { Flex, FormLabel } from '@chakra-ui/react';
 import Image from 'next/image';
 import SearchIcon from '../../assets/images/icon-search.svg';
 import FormInput from '../ui/input/Input';
@@ -20,7 +20,20 @@ const Search = function () {
       alignItems='center'
       mr={6}
     >
-      <Image src={SearchIcon} width='19' height='19' alt='search icon'></Image>
+      <FormLabel
+        display='flex'
+        alignItems='center'
+        justifyContent='center'
+        htmlFor='search'
+        m='0'
+      >
+        <Image
+          src={SearchIcon}
+          width='19'
+          height='19'
+          alt='search icon'
+        ></Image>
+      </FormLabel>
       <FormInput
         pl={3}
         flexGrow={1}
@@ -28,6 +41,8 @@ const Search = function () {
         placeholder='Cappuccino'
         fontSize={12}
         color='brand.100'
+        id='search'
+        name='search'
       />
     </Flex>
   );

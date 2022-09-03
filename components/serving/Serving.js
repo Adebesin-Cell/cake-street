@@ -18,7 +18,6 @@ const Serving = function (props) {
       borderColor='brand.250'
       borderRadius='xl'
       cursor='pointer'
-      {...props}
     >
       <Text
         color='inherit'
