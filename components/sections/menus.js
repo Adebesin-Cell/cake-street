@@ -10,7 +10,7 @@ import SectionTitle from '../ui/title/SectionTitle';
 
 const Menus = function () {
   return (
-    <Box as='section' pt='32' mb='9'>
+    <Box as='section' pt='32'>
       <Container maxW='container.xl' p='0'>
         <SectionTitle text='Special menu' subText='for you' />
         <Grid

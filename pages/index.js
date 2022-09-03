@@ -5,6 +5,7 @@ import Popular from '../components/sections/popular';
 import Services from '../components/sections/services';
 import AboutUs from '../components/sections/about';
 import Menus from '../components/sections/menus';
+import Testimonial from '../components/sections/testimonial';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Services></Services>
       <AboutUs></AboutUs>
       <Menus></Menus>
+      <Testimonial></Testimonial>
     </Container>
   );
 }

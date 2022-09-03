@@ -64,16 +64,18 @@ const AboutUs = function () {
                 our main product is made with a secret recipe and available in
                 stores worldwide.
               </Text>
-              <IntroBtn mt='8' hasBg={true}>
-                <Text
-                  textAlign='center'
-                  fontWeight='700'
-                  color='brand.150'
-                  fontSize='sm'
-                >
-                  Get your coffee
-                </Text>
-              </IntroBtn>
+              <Box mt='8'>
+                <IntroBtn hasBg={true}>
+                  <Text
+                    textAlign='center'
+                    fontWeight='700'
+                    color='brand.150'
+                    fontSize='sm'
+                  >
+                    Get your coffee
+                  </Text>
+                </IntroBtn>
+              </Box>
             </GridItem>
           </Grid>
         </Container>
