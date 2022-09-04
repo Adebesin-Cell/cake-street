@@ -10,6 +10,7 @@ const TestimonialItem = function (props) {
         xsm: '1 0 calc(100% - 40px)',
       }}
       minH='100%'
+      maxH='380px'
     >
       <TestimonialCard {...props.testimonial} />
     </ListItem>
