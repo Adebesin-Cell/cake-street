@@ -5,7 +5,7 @@ const SectionTitle = function (props) {
   return (
     <Heading
       display='flex'
-      gap='10px'
+      gap={{ xl: '10px', xsm: '5px' }}
       fontSize={{ md: 32, xsm: 'xl' }}
       color={props.color || 'black'}
       textAlign={props.textAlign || 'left'}

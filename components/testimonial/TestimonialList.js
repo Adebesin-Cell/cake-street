@@ -4,9 +4,21 @@ import TestimonialItem from './TestimonialItem';
 import { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import Btn from '../ui/button/Button';
+import { useMediaQuery } from '../../hooks/use-media-query';
 
 const TestimonialList = function () {
   const [activeIndex, setActiveIndex] = useState(0);
+  const mobileMatch = useMediaQuery(600);
+  const tabletMatch = useMediaQuery(1024);
+  let translateValue = 33.333;
+
+  if (mobileMatch) {
+    translateValue = 100;
+  } else if (tabletMatch) {
+    translateValue = 50;
+  }
+
+  //   console.log(matches);
 
   const activeBtnStyle = {
     backgroundColor: '#FF912B',
@@ -43,7 +55,7 @@ const TestimonialList = function () {
         whiteSpace='nowrap'
         transition='transform 300ms'
         gap='8'
-        style={{ transform: `translateX(-${activeIndex * 33.333}%)` }}
+        style={{ transform: `translateX(-${activeIndex * translateValue}%)` }}
       >
         {Testimonials.map((testimonial) => (
           <TestimonialItem key={testimonial.id} testimonial={testimonial} />
