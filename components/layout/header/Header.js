@@ -4,6 +4,8 @@ import CartIcon from '../../cart/CartIcon';
 import Logo from '../../logo/Logo';
 import Search from '../../searchbar/Search';
 import Navigation from '../navigation/Navigation';
+import { HamburgerIcon } from '@chakra-ui/icons';
+import Btn from '../../ui/button/Button';
 
 const Header = function () {
   return (
@@ -52,10 +54,16 @@ const Header = function () {
           <Search />
           <CartIcon />
         </Flex>
+        {/* Search And Cart Icon container */}
+        {/* Cart Icon and Harmburger menu Icon */}
+        <Flex display={{ xl: 'none', xsm: 'flex' }} alignItems='center'>
+          <CartIcon />
+          <Btn ml='2' variant='unstyled'>
+            <HamburgerIcon w='6' h='6' />
+          </Btn>
+        </Flex>
+        {/* Cart Icon and Harmburger menu Icon */}
       </Flex>
-      {/* Search And Cart Icon container */}
-      {/* Cart Icon and Harmburger menu Icon */}
-      {/* Cart Icon and Harmburger menu Icon */}
     </Container>
     // Header wrapper ends here
   );
