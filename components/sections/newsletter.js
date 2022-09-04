@@ -6,7 +6,7 @@ import SectionTitle from '../ui/title/SectionTitle';
 
 const NewsLetter = function () {
   return (
-    <Box as='section' mt={{ xl: '24', xsm: '16' }} mb={{ xl: '24', xsm: '16' }}>
+    <Box as='section' mt={{ xl: '24', xsm: '16' }} mb={{ xl: '24', xsm: '0' }}>
       <Container
         maxW='container.xl'
         p='0'
@@ -14,14 +14,14 @@ const NewsLetter = function () {
           xxl: '0',
           xlg: '5',
           xl: '5',
-          xsm: '5',
+          xsm: '0',
         }}
       >
         <Flex
           bgImg={`url(${NewsletterBg.src})`}
           bgRepeat='no-repeat'
           bgSize='cover'
-          borderRadius={42}
+          borderRadius={{ xl: 42, xsm: 0 }}
           bgPos='center'
           pt={{ xl: '52', xsm: '32' }}
           pb={{ xl: '52', xsm: '32' }}

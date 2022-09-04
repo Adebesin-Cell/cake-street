@@ -7,6 +7,7 @@ import Navigation from '../navigation/Navigation';
 
 const Header = function () {
   return (
+    // Header wrapper starts here
     <Container
       maxW={'container.xl'}
       p='0'
@@ -40,6 +41,7 @@ const Header = function () {
         {/* Navigation menu */}
         <Navigation />
         {/* Navigation menu ends */}
+        {/* Search And Cart Icon container */}
         <Flex
           alignItems='center'
           display={{
@@ -51,7 +53,11 @@ const Header = function () {
           <CartIcon />
         </Flex>
       </Flex>
+      {/* Search And Cart Icon container */}
+      {/* Cart Icon and Harmburger menu Icon */}
+      {/* Cart Icon and Harmburger menu Icon */}
     </Container>
+    // Header wrapper ends here
   );
 };
 
