@@ -3,7 +3,13 @@ import NextLink from 'next/link';
 
 const Navigation = function () {
   return (
-    <Box as='nav'>
+    <Box
+      as='nav'
+      display={{
+        xsm: 'none',
+        xl: 'flex',
+      }}
+    >
       <List display='flex' alignItems='center' listStyleType='none' gap={8}>
         <ListItem>
           <NextLink href='/about' name='About us'>

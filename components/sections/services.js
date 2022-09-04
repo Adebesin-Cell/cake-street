@@ -8,9 +8,30 @@ import ServicesImageTwo from '../../assets/images/coffee-cup.png';
 const Services = function () {
   return (
     <Box as='section' pt='5'>
-      <Container maxW='container.xl' p='0'>
+      <Container
+        maxW='container.xl'
+        p='0'
+        px={{
+          xxl: '0',
+          xlg: '5',
+          xl: '5',
+          xsm: '5',
+        }}
+      >
         <SectionTitle text='How to use delivery' subText='service' />
-        <Grid templateColumns='repeat(3, 1fr)' mt='12'>
+        <Grid
+          templateColumns={{
+            xl: 'repeat(3, 1fr)',
+            md: 'repeat(2, 1fr)',
+            xsm: 'repeat(1, 1fr)',
+          }}
+          gap={{
+            xl: '0',
+            md: '10',
+            xsm: '10',
+          }}
+          mt='12'
+        >
           <ServicesCard
             image={ServicesImage}
             title='choose your coffee'

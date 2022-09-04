@@ -29,8 +29,24 @@ const AboutUs = function () {
         w='full'
         ml='-3'
       >
-        <Container maxW='container.xl' p='0'>
-          <Grid templateColumns='repeat(2, 1fr)' pt='20' pb='16'>
+        <Container
+          maxW='container.xl'
+          p='0'
+          px={{
+            xxl: '0',
+            xlg: '5',
+            xl: '5',
+            xsm: '5',
+          }}
+        >
+          <Grid
+            templateColumns={{
+              xmd: 'repeat(2, 1fr)',
+              xsm: 'repeat(1, 1fr)',
+            }}
+            pt='20'
+            pb='16'
+          >
             <GridItem>
               <Flex direction={'column'}>
                 <Flex mt='-48' justifyContent='center'>

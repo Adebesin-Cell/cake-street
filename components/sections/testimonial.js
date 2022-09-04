@@ -8,12 +8,31 @@ const Testimonial = function () {
       as='section'
       mt='32'
       pt='28'
-      bgSize='65%'
+      bgSize='contain'
       bgRepeat={'no-repeat'}
       bgImage={'url(../../assets/images/testimonial-image.png)'}
     >
-      <Container maxW='container.xl' p='0'>
-        <Grid templateColumns='1fr 2fr' gap='16' pb='28'>
+      <Container
+        maxW='container.xl'
+        p='0'
+        px={{
+          xxl: '0',
+          xlg: '5',
+          xl: '5',
+          xsm: '5',
+        }}
+      >
+        <Grid
+          templateColumns={{
+            xmd: '1fr 2fr',
+            xsm: '1fr',
+          }}
+          gap='16'
+          pb={{
+            xxl: '28',
+            xlg: '24',
+          }}
+        >
           <GridItem pt='20' pb='20'>
             <SectionTitle text='What they say about us'></SectionTitle>
             <Text mt='4' maxW='75%' fontSize='l' color='brand.500'>

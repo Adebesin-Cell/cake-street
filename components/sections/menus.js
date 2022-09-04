@@ -11,10 +11,23 @@ import SectionTitle from '../ui/title/SectionTitle';
 const Menus = function () {
   return (
     <Box as='section' pt='32'>
-      <Container maxW='container.xl' p='0'>
+      <Container
+        maxW='container.xl'
+        p='0'
+        px={{
+          xxl: '0',
+          xlg: '5',
+          xl: '5',
+          xsm: '5',
+        }}
+      >
         <SectionTitle text='Special menu' subText='for you' />
         <Grid
-          templateColumns='repeat(3, 1fr)'
+          templateColumns={{
+            xl: 'repeat(3, 1fr)',
+            md: 'repeat(2, 1fr)',
+            xsm: 'repeat(1, 1fr)',
+          }}
           columnGap={10}
           rowGap={10}
           mt='9'

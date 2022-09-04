@@ -7,7 +7,16 @@ import Navigation from '../navigation/Navigation';
 
 const Header = function () {
   return (
-    <Container maxW={'container.xl'} p='0'>
+    <Container
+      maxW={'container.xl'}
+      p='0'
+      px={{
+        xxl: '0',
+        xlg: '5',
+        xl: '5',
+        xsm: '5',
+      }}
+    >
       <Flex
         as='header'
         alignItems={'center'}
@@ -27,7 +36,13 @@ const Header = function () {
         {/* Navigation menu */}
         <Navigation />
         {/* Navigation menu ends */}
-        <Flex alignItems='center'>
+        <Flex
+          alignItems='center'
+          display={{
+            xsm: 'none',
+            xl: 'flex',
+          }}
+        >
           <Search />
           <CartIcon />
         </Flex>
