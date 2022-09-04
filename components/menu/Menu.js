@@ -1,4 +1,4 @@
-import { Flex, List, ListItem, Link } from '@chakra-ui/react';
+import { SlideFade, Flex, List, ListItem, Link } from '@chakra-ui/react';
 import { CloseIcon } from '@chakra-ui/icons';
 import Btn from '../ui/button/Button';
 import NextLink from 'next/link';
@@ -6,17 +6,22 @@ import NextLink from 'next/link';
 // Mobile Menu
 const Menu = function (props) {
   return (
-    <Flex
-      w='full'
-      direction='column'
-      bgColor='white'
-      minH='100vh'
-      pos='fixed'
-      top='0'
-      left='0'
-      zIndex='4'
-      display={{ xl: 'none', xsm: 'flex' }}
-      p='5'
+    <SlideFade
+      style={{
+        width: '100vw',
+        direction: 'column',
+        background: 'white',
+        minHeight: '100vh',
+        position: 'fixed',
+        top: '0',
+        left: '0',
+        zIndex: '4',
+        padding: '20px',
+        display: 'flex',
+        flexDirection: 'column',
+      }}
+      offsetX='20px'
+      in={props.isOpen}
     >
       <Flex justifyContent='flex-end'>
         <Btn variant='unstyled' onClick={props.onClose}>
@@ -33,7 +38,7 @@ const Menu = function (props) {
           gap='4'
         >
           <ListItem>
-            <NextLink href='/' name='Home' onClick={props.onClose}>
+            <NextLink href='/' name='Home'>
               <Link
                 transition='all 300ms'
                 _hover={{ textDecoration: 'none', color: 'brand.50' }}
@@ -41,13 +46,14 @@ const Menu = function (props) {
                 textAlign='center'
                 w='full'
                 display='block'
+                onClick={props.onClose}
               >
                 Home
               </Link>
             </NextLink>
           </ListItem>
           <ListItem>
-            <NextLink href='/about' name='About us' onClick={props.onClose}>
+            <NextLink href='/about' name='About us'>
               <Link
                 transition='all 300ms'
                 _hover={{ textDecoration: 'none', color: 'brand.50' }}
@@ -55,17 +61,14 @@ const Menu = function (props) {
                 textAlign='center'
                 w='full'
                 display='block'
+                onClick={props.onClose}
               >
                 About us
               </Link>
             </NextLink>
           </ListItem>
           <ListItem>
-            <NextLink
-              href='/product'
-              name='Our Product'
-              onClick={props.onClose}
-            >
+            <NextLink href='/product' name='Our Product'>
               <Link
                 transition='all 300ms'
                 _hover={{ textDecoration: 'none', color: 'brand.50' }}
@@ -73,13 +76,14 @@ const Menu = function (props) {
                 textAlign='center'
                 w='full'
                 display='block'
+                onClick={props.onClose}
               >
                 Our Product
               </Link>
             </NextLink>
           </ListItem>
           <ListItem>
-            <NextLink href='/delivery' name='Delivery' onClick={props.onClose}>
+            <NextLink href='/delivery' name='Delivery'>
               <Link
                 transition='all 300ms'
                 _hover={{ textDecoration: 'none', color: 'brand.50' }}
@@ -87,6 +91,7 @@ const Menu = function (props) {
                 textAlign='center'
                 w='full'
                 display='block'
+                onClick={props.onClose}
               >
                 Delivery
               </Link>
@@ -95,7 +100,7 @@ const Menu = function (props) {
         </List>
         {/* Navigation List End here */}
       </Flex>
-    </Flex>
+    </SlideFade>
   );
 };
 

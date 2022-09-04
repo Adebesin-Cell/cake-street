@@ -7,18 +7,10 @@ import Navigation from '../navigation/Navigation';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import Btn from '../../ui/button/Button';
 import Menu from '../../menu/Menu';
-import { useState } from 'react';
+import { useDisclosure } from '@chakra-ui/react';
 
 const Header = function () {
-  const [menuIsOpen, setMenuIsopened] = useState(false);
-
-  const openMenuHandler = function () {
-    setMenuIsopened(true);
-  };
-
-  const closeMenuHandler = function () {
-    setMenuIsopened(false);
-  };
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     // Header wrapper starts here
@@ -70,13 +62,13 @@ const Header = function () {
         {/* Cart Icon and Harmburger menu Icon */}
         <Flex display={{ xl: 'none', xsm: 'flex' }} alignItems='center'>
           <CartIcon />
-          <Btn ml='2' variant='unstyled' onClick={openMenuHandler}>
+          <Btn ml='2' variant='unstyled' onClick={onOpen}>
             <HamburgerIcon w='6' h='6' />
           </Btn>
         </Flex>
         {/* Cart Icon and Harmburger menu Icon */}
       </Flex>
-      {menuIsOpen && <Menu onClose={closeMenuHandler} />}
+      {isOpen && <Menu isOpen={isOpen} onClose={onClose} />}
     </Container>
     // Header wrapper ends here
   );
