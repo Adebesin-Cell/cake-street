@@ -3,6 +3,7 @@ import NextLink from 'next/link';
 
 const Navigation = function () {
   return (
+    // navigation container starts here
     <Box
       as='nav'
       display={{
@@ -10,6 +11,7 @@ const Navigation = function () {
         xl: 'flex',
       }}
     >
+      {/* Navigation list starts here */}
       <List display='flex' alignItems='center' listStyleType='none' gap={8}>
         <ListItem>
           <NextLink href='/about' name='About us'>
@@ -45,7 +47,9 @@ const Navigation = function () {
           </NextLink>
         </ListItem>
       </List>
+      {/* Navigation list ends here */}
     </Box>
+    // navigation container ends here
   );
 };
 

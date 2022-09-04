@@ -20,7 +20,10 @@ const Card = function (props) {
   };
 
   return (
-    <GridItem sx={props.isPopular ? cardShadow : cardShadowSm} minH={96}>
+    <GridItem
+      sx={props.isPopular ? cardShadow : cardShadowSm}
+      minH={{ md: 96, xsm: '0' }}
+    >
       <Flex
         direction='column'
         sx={props.isPopular ? innerCardStyles : ''}

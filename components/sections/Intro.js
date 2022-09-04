@@ -95,6 +95,10 @@ const Intro = function () {
                 lg: 'left',
                 xsm: 'center',
               }}
+              direction={{ lg: 'row', xsm: 'column' }}
+              maxW={{ lg: '100%', xsm: '220px' }}
+              mx={{ lg: '0', xsm: 'auto' }}
+              rowGap={{ lg: '0', xsm: '2.5' }}
             >
               <IntroBtn hasBg={true}>
                 <Text color='white' mr={2.5}>
