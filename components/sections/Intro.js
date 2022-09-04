@@ -33,7 +33,7 @@ const Intro = function () {
         }}
         pb={{
           xl: 96,
-          lg: '48',
+          lg: '20',
         }}
       >
         <Grid
@@ -71,9 +71,13 @@ const Intro = function () {
                 xsm: '65%',
                 lg: '65%',
               }}
-              mx={{
+              mr={{
                 xsm: 'auto',
                 lg: 'left',
+              }}
+              ml={{
+                xsm: 'auto',
+                lg: 'initial',
               }}
               textAlign={{
                 xsm: 'center',

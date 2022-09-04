@@ -26,7 +26,7 @@ const Header = function () {
           md: '8',
           xsm: '6',
         }}
-        pb='30'
+        pb={{ xl: '30', xsm: '0' }}
       >
         {/* Logo Box */}
         <Flex alignItems='center'>
