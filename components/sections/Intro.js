@@ -31,7 +31,10 @@ const Intro = function () {
           xl: '5',
           xsm: '5',
         }}
-        pb={96}
+        pb={{
+          xl: 96,
+          lg: '48',
+        }}
       >
         <Grid
           templateColumns={{

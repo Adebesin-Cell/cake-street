@@ -3,7 +3,14 @@ import TestimonialCard from './TestimonialCard';
 
 const TestimonialItem = function (props) {
   return (
-    <ListItem flex='1 0 calc(35% - 40px)'>
+    <ListItem
+      flex={{
+        xmd: '1 0 calc(35% - 40px)',
+        md: '1 0 calc(50% - 40px)',
+        xsm: '1 0 calc(100% - 40px)',
+      }}
+      minH='100%'
+    >
       <TestimonialCard {...props.testimonial} />
     </ListItem>
   );

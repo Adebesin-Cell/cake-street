@@ -21,7 +21,11 @@ const Header = function () {
         as='header'
         alignItems={'center'}
         justifyContent={'space-between'}
-        pt={12}
+        pt={{
+          xl: 12,
+          md: '8',
+          xsm: '6',
+        }}
         pb='30'
       >
         {/* Logo Box */}

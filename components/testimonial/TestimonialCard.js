@@ -2,8 +2,17 @@ import { Flex, Img, Box, Heading, Text } from '@chakra-ui/react';
 
 const TestimonialCard = function (props) {
   return (
-    <Flex pos='relative'>
-      <Img src={props.image.src} display='block' />
+    <Flex pos='relative' height='100%'>
+      <Img
+        src={props.image.src}
+        display='block'
+        w={{
+          xmd: 'initial',
+          md: '85%',
+          xsm: '95%',
+        }}
+        h='full'
+      />
       <Box
         bgColor='brand.400'
         pos='absolute'

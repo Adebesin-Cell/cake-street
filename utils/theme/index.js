@@ -9,7 +9,6 @@ const breakpoints = {
   xl: '1140px',
   '2xl': '1200px',
   xlg: '1280px',
-  //   xxlg: '1440px',
   xxl: '1440px',
   '2xxl': '1800px',
 };

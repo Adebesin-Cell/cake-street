@@ -7,8 +7,14 @@ const Testimonial = function () {
     <Box
       as='section'
       mt='32'
-      pt='28'
-      bgSize='contain'
+      pt={{
+        xxl: '28',
+        lg: '24',
+      }}
+      bgSize={{
+        xmd: 'contain',
+        xsm: 'cover',
+      }}
       bgRepeat={'no-repeat'}
       bgImage={'url(../../assets/images/testimonial-image.png)'}
     >
@@ -30,12 +36,25 @@ const Testimonial = function () {
           gap='16'
           pb={{
             xxl: '28',
-            xlg: '24',
+            lg: '24',
           }}
         >
-          <GridItem pt='20' pb='20'>
+          <GridItem pt={{ xxl: '20', lg: '10' }} pb={{ xxl: '20', lg: '10' }}>
             <SectionTitle text='What they say about us'></SectionTitle>
-            <Text mt='4' maxW='75%' fontSize='l' color='brand.500'>
+            <Text
+              mt='4'
+              maxW='75%'
+              mx={{
+                xmd: 'initial',
+                xsm: 'auto',
+              }}
+              fontSize='md'
+              color='brand.500'
+              textAlign={{
+                xmd: 'left',
+                xsm: 'center',
+              }}
+            >
               We always provide the best service and always maintain the quality
               of coffee
             </Text>

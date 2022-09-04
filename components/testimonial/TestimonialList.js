@@ -29,8 +29,8 @@ const TestimonialList = function () {
   function updateIndex(newIndex) {
     if (newIndex < 0) {
       newIndex = 0;
-    } else if (newIndex >= props.data.length) {
-      newIndex = props.data.length - 1;
+    } else if (newIndex >= Testimonials.length) {
+      newIndex = Testimonials.length - 1;
     }
 
     setActiveIndex(newIndex);

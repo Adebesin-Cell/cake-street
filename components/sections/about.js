@@ -27,7 +27,7 @@ const AboutUs = function () {
         bgSize='cover'
         bgRepeat='no-repeat'
         w='full'
-        ml='-3'
+        ml={{ xmd: '-3', xsm: '0' }}
       >
         <Container
           maxW='container.xl'
@@ -50,11 +50,15 @@ const AboutUs = function () {
             <GridItem>
               <Flex direction={'column'}>
                 <Flex mt='-48' justifyContent='center'>
-                  <Box w='max-content' p='5px' sx={innerCardStyles}>
+                  <Box
+                    w={{ md: 'max-content', xsm: '100%' }}
+                    p='5px'
+                    sx={innerCardStyles}
+                  >
                     <Img
                       src={AboutImage.src}
                       display='block'
-                      maxW='400px'
+                      maxW={{ md: '400px', xsm: '100%' }}
                       w='full'
                       objectFit='cover'
                       alt='About Us'
@@ -63,24 +67,55 @@ const AboutUs = function () {
                 </Flex>
               </Flex>
             </GridItem>
-            <GridItem>
+            <GridItem
+              mt={{
+                xmd: 0,
+                xsm: '10',
+              }}
+            >
               <SectionTitle text='About' subText='Us'></SectionTitle>
               <Text
                 mt='5'
                 color='black'
                 fontSize={'xl'}
                 fontWeight={600}
-                maxW='50%'
+                textAlign={{
+                  xmd: 'left',
+                  xsm: 'center',
+                }}
+                maxW={{
+                  xmd: '50%',
+                  xsm: '100%',
+                }}
                 pr='4'
               >
                 We provide quality coffee, and ready to deliver.
               </Text>
-              <Text mt='3.5' maxW='65%' fontSize='l' color='brand.500'>
+              <Text
+                mt='3.5'
+                textAlign={{
+                  xmd: 'left',
+                  xsm: 'center',
+                }}
+                maxW={{
+                  xmd: '65%',
+                  xsm: '100%',
+                }}
+                fontSize='l'
+                color='brand.500'
+              >
                 We are a company that makes and distributes delicious drinks.
                 our main product is made with a secret recipe and available in
                 stores worldwide.
               </Text>
-              <Box mt='8'>
+              <Box
+                mt='8'
+                display='flex'
+                justifyContent={{
+                  xmd: 'left',
+                  xsm: 'center',
+                }}
+              >
                 <IntroBtn hasBg={true}>
                   <Text
                     textAlign='center'
