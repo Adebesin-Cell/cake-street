@@ -6,15 +6,22 @@ import { useSwipeable } from 'react-swipeable';
 import Btn from '../ui/button/Button';
 import { useMediaQuery } from '../../hooks/use-media-query';
 
+// Testimonial Wrapper / List
 const TestimonialList = function () {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  // Get viewport states
   const mobileMatch = useMediaQuery(600);
   const tabletMatch = useMediaQuery(1024);
+
+  // initialize slider start value for desktop
   let translateValue = 33.333;
 
   if (mobileMatch) {
+    // initialize slider start value for mobile screens
     translateValue = 96.5;
   } else if (tabletMatch) {
+    // initialize slider start value for tablets
     translateValue = 45.8;
   }
 
@@ -22,6 +29,7 @@ const TestimonialList = function () {
     backgroundColor: '#FF912B',
   };
 
+  // swipe config for touch screens
   const handlers = useSwipeable({
     onSwipedLeft: () => {
       updateIndex(activeIndex + 1);
@@ -31,11 +39,13 @@ const TestimonialList = function () {
     },
   });
 
+  // Slider pagination function
   const switchIndexHandler = function (e) {
     const { index } = e.target.dataset;
     setActiveIndex(+index);
   };
 
+  // Slider update function
   function updateIndex(newIndex) {
     if (newIndex < 0) {
       newIndex = 0;

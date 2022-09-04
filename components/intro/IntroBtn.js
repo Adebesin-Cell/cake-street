@@ -1,5 +1,6 @@
 import Btn from '../ui/button/Button';
 
+// CTA buttons Component
 const IntroBtn = function (props) {
   const orderBtnStyles = {
     background: '#2F2105',

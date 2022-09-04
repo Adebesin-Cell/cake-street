@@ -1,5 +1,6 @@
 import { Box, Img, Heading, Flex, Text } from '@chakra-ui/react';
 
+// Service card component
 const ServicesCard = function (props) {
   return (
     <Box>

@@ -1,5 +1,6 @@
 import { Flex, Img, Box, Heading, Text } from '@chakra-ui/react';
 
+// Testimonial card component
 const TestimonialCard = function (props) {
   return (
     <Flex pos='relative' height='100%'>

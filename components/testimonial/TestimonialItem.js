@@ -1,6 +1,7 @@
 import { ListItem } from '@chakra-ui/react';
 import TestimonialCard from './TestimonialCard';
 
+// Testimonial Item
 const TestimonialItem = function (props) {
   return (
     <ListItem

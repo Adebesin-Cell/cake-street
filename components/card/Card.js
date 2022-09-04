@@ -3,6 +3,7 @@ import AddToCartIcon from '../cart/AddToCartIcon';
 import Rating from '../rating/Rating';
 import Serving from '../serving/Serving';
 
+// Card Component
 const Card = function (props) {
   const cardShadow = {
     filter: 'drop-shadow(10px 10px 32px rgba(0, 0, 0, 0.25))',

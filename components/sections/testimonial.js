@@ -2,6 +2,7 @@ import { Box, Container, Grid, GridItem, Text } from '@chakra-ui/react';
 import TestimonialList from '../testimonial/TestimonialList';
 import SectionTitle from '../ui/title/SectionTitle';
 
+// Testimonial Section
 const Testimonial = function () {
   return (
     <Box

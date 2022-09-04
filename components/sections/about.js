@@ -11,7 +11,9 @@ import AboutImage from '../../assets/images/about-image.png';
 import IntroBtn from '../intro/IntroBtn';
 import SectionTitle from '../ui/title/SectionTitle';
 
+// About Us Section
 const AboutUs = function () {
+  // About Us Image blur background
   const innerCardStyles = {
     background:
       'linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.7) 100%)',

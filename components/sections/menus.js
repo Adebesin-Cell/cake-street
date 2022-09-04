@@ -8,6 +8,7 @@ import CardImageFour from '../../assets/images/image--8.png';
 import CardImageFive from '../../assets/images/image--9.png';
 import SectionTitle from '../ui/title/SectionTitle';
 
+// Special Menus section
 const Menus = function () {
   return (
     <Box as='section' pt={{ xl: '32', xsm: '20' }}>

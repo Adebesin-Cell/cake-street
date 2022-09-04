@@ -1,6 +1,7 @@
 import { Heading, Text } from '@chakra-ui/react';
 import Underline from '../../underline/Underline';
 
+//Section titles
 const SectionTitle = function (props) {
   return (
     <Heading

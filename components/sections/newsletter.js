@@ -4,6 +4,7 @@ import IntroBtn from '../intro/IntroBtn';
 import FormInput from '../ui/input/Input';
 import SectionTitle from '../ui/title/SectionTitle';
 
+// Newsletter section
 const NewsLetter = function () {
   return (
     <Box as='section' mt={{ xl: '24', xsm: '16' }} mb={{ xl: '24', xsm: '0' }}>

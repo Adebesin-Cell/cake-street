@@ -5,6 +5,7 @@ import CardImageTwo from '../../assets/images/image--3.png';
 import Card from '../card/Card';
 import SectionTitle from '../ui/title/SectionTitle';
 
+// Popular now section
 const Popular = function () {
   return (
     <Box as='section' mt={{ xl: '-96', xsm: '0' }} pt={20} pos='relative'>

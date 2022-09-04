@@ -5,6 +5,7 @@ import ServicesImage from '../../assets/images/choice.png';
 import ServicesImageOne from '../../assets/images/food-truck.png';
 import ServicesImageTwo from '../../assets/images/coffee-cup.png';
 
+// Our services section
 const Services = function () {
   return (
     <Box as='section' pt='5'>

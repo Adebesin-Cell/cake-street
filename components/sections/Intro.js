@@ -13,6 +13,7 @@ import Hero from '../../assets/images/hero-img.png';
 import { ShoppingCartIcon } from '../../utils/icons/Icons';
 import IntroBtn from '../intro/IntroBtn';
 
+// Intro section
 const Intro = function () {
   return (
     <Box
@@ -21,7 +22,9 @@ const Intro = function () {
       bgSize='cover'
       bgRepeat='no-repeat'
     >
+      {/* Header starts here */}
       <Header />
+      {/* Header ends here */}
       <Container
         maxW='container.xl'
         p='0'
