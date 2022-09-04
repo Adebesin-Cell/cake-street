@@ -13,12 +13,10 @@ const TestimonialList = function () {
   let translateValue = 33.333;
 
   if (mobileMatch) {
-    translateValue = 100;
+    translateValue = 96.5;
   } else if (tabletMatch) {
-    translateValue = 50;
+    translateValue = 45.8;
   }
-
-  //   console.log(matches);
 
   const activeBtnStyle = {
     backgroundColor: '#FF912B',

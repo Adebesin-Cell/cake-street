@@ -23,8 +23,8 @@ const NewsLetter = function () {
           bgSize='cover'
           borderRadius={42}
           bgPos='center'
-          pt={{ xl: '52', xsm: '44' }}
-          pb={{ xl: '52', xsm: '44' }}
+          pt={{ xl: '52', xsm: '32' }}
+          pb={{ xl: '52', xsm: '32' }}
           px={{
             xsm: '5',
           }}
