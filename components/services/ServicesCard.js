@@ -7,7 +7,7 @@ const ServicesCard = function (props) {
         <Img src={props.image.src} w='160' h='160' display='block'></Img>
       </Flex>
       <Heading
-        fontSize={'2xl'}
+        fontSize={{ xl: '2xl', xsm: 18 }}
         color='brand.900'
         mt='4'
         textTransform={'capitalize'}
@@ -17,7 +17,7 @@ const ServicesCard = function (props) {
         {props.title}
       </Heading>
       <Text
-        fontSize={'l'}
+        fontSize={{ xl: 'l', xsm: 14 }}
         color='brand.900'
         mt='2'
         textAlign={'center'}

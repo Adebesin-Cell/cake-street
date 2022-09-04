@@ -13,7 +13,7 @@ const Popular = function () {
         zIndex={2}
         maxW='container.xl'
         p='0'
-        pb='40'
+        pb={{ xl: '40', xsm: '20' }}
         px={{
           xxl: '0',
           xlg: '5',

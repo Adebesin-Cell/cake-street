@@ -10,7 +10,7 @@ import SectionTitle from '../ui/title/SectionTitle';
 
 const Menus = function () {
   return (
-    <Box as='section' pt='32'>
+    <Box as='section' pt={{ xl: '32', xsm: '20' }}>
       <Container
         maxW='container.xl'
         p='0'

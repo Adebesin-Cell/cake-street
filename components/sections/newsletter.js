@@ -6,7 +6,7 @@ import SectionTitle from '../ui/title/SectionTitle';
 
 const NewsLetter = function () {
   return (
-    <Box as='section' mt='24' mb='24'>
+    <Box as='section' mt={{ xl: '24', xsm: '16' }} mb={{ xl: '24', xsm: '16' }}>
       <Container
         maxW='container.xl'
         p='0'
@@ -23,8 +23,11 @@ const NewsLetter = function () {
           bgSize='cover'
           borderRadius={42}
           bgPos='center'
-          pt='52'
-          pb='52'
+          pt={{ xl: '52', xsm: '44' }}
+          pb={{ xl: '52', xsm: '44' }}
+          px={{
+            xsm: '5',
+          }}
           direction='column'
           justifyContent='center'
         >

@@ -21,7 +21,7 @@ const AboutUs = function () {
   };
 
   return (
-    <Box as='section' bgColor={'brand.350'} mt='64'>
+    <Box as='section' bgColor={'brand.350'} mt={{ xl: '64', xsm: '52' }}>
       <Box
         bgImage='url(../../assets/images/about-background.png)'
         bgSize='cover'

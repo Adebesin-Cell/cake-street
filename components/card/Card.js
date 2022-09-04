@@ -39,10 +39,10 @@ const Card = function (props) {
           </Box>
           <Box p='2.5' pt='5'>
             <Flex alignItems='center' justifyContent='space-between'>
-              <Heading color='brand.900' fontSize={'2xl'}>
+              <Heading color='brand.900' fontSize={{ xl: '2xl', xsm: 18 }}>
                 {props.title}
               </Heading>
-              <Heading color='brand.900' fontSize={'2xl'}>
+              <Heading color='brand.900' fontSize={{ xl: '2xl', xsm: 18 }}>
                 {props.price}
               </Heading>
             </Flex>
@@ -62,7 +62,7 @@ const Card = function (props) {
               <Flex justifyContent={'space-between'} mt='2' alignItems='center'>
                 <Text
                   color='brand.500'
-                  fontSize='sm'
+                  fontSize={{ xsm: 14 }}
                   fontWeight={600}
                   maxW='40'
                 >

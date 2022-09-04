@@ -45,7 +45,15 @@ const Intro = function () {
           gap={10}
         >
           <GridItem>
-            <Heading color='brand.900' fontSize={48} fontWeight={600}>
+            <Heading
+              color='brand.900'
+              textAlign={{
+                xsm: 'center',
+                lg: 'left',
+              }}
+              fontSize={{ xl: 48, xsm: 32 }}
+              fontWeight={600}
+            >
               <Text as='span' display='block'>
                 Enjoy your
                 <Text as='span' color='brand.50'>
@@ -57,11 +65,33 @@ const Intro = function () {
                 before your activity
               </Text>
             </Heading>
-            <Text mt={6} maxW='65%' color='brand.500'>
+            <Text
+              mt={6}
+              maxW={{
+                xsm: '65%',
+                lg: '65%',
+              }}
+              mx={{
+                xsm: 'auto',
+                lg: 'left',
+              }}
+              textAlign={{
+                xsm: 'center',
+                lg: 'left',
+              }}
+              color='brand.500'
+            >
               Boost your productivity and build your mood with a glass of coffee
               in the morning
             </Text>
-            <Flex mt={8} columnGap={6}>
+            <Flex
+              mt={8}
+              columnGap={6}
+              justifyContent={{
+                lg: 'left',
+                xsm: 'center',
+              }}
+            >
               <IntroBtn hasBg={true}>
                 <Text color='white' mr={2.5}>
                   Order now
@@ -83,7 +113,7 @@ const Intro = function () {
               </IntroBtn>
             </Flex>
           </GridItem>
-          <GridItem>
+          <GridItem pb={{ lg: '0', xsm: '20' }}>
             <Img
               src={Hero.src}
               style={{ position: 'static', width: '100%', display: 'block' }}

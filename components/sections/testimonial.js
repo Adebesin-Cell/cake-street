@@ -6,10 +6,11 @@ const Testimonial = function () {
   return (
     <Box
       as='section'
-      mt='32'
+      mt={{ xl: '32', xsm: '20' }}
       pt={{
         xxl: '28',
         lg: '24',
+        xsm: '16',
       }}
       bgSize={{
         xmd: 'contain',
@@ -33,10 +34,11 @@ const Testimonial = function () {
             xmd: '1fr 2fr',
             xsm: '1fr',
           }}
-          gap='16'
+          gap={{ lg: '16', xsm: '10' }}
           pb={{
             xxl: '28',
             lg: '24',
+            xsm: '16',
           }}
         >
           <GridItem pt={{ xxl: '20', lg: '10' }} pb={{ xxl: '20', lg: '10' }}>
