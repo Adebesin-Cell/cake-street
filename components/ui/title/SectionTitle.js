@@ -5,15 +5,9 @@ import Underline from '../../underline/Underline';
 const SectionTitle = function (props) {
   return (
     <Heading
-      display='flex'
-      gap={{ xl: '10px', xsm: '5px' }}
       fontSize={{ md: 32, xsm: 24 }}
       color={props.color || 'black'}
-      textAlign={props.textAlign || 'left'}
-      justifyContent={{
-        xl: props.justifyContent || 'left',
-        xsm: 'center',
-      }}
+      textAlign={{ xl: props.textAlign || 'left', xsm: 'center' }}
     >
       {props.text}
       <Text as='span' pos='relative'>
