@@ -1,4 +1,4 @@
-import { Container, Flex, Link } from '@chakra-ui/react';
+import { useDisclosure, Flex, Link } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import CartIcon from '../../cart/CartIcon';
 import Logo from '../../logo/Logo';
@@ -7,23 +7,14 @@ import Navigation from '../navigation/Navigation';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import Btn from '../../ui/button/Button';
 import Menu from '../../menu/Menu';
-import { useDisclosure } from '@chakra-ui/react';
+import SectionContainer from '../container/SectionContainer';
 
 const Header = function () {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     // Header wrapper starts here
-    <Container
-      maxW={'container.xl'}
-      p='0'
-      px={{
-        xxl: '0',
-        xlg: '5',
-        xl: '5',
-        xsm: '5',
-      }}
-    >
+    <SectionContainer>
       <Flex
         as='header'
         alignItems={'center'}
@@ -69,7 +60,7 @@ const Header = function () {
         {/* Cart Icon and Harmburger menu Icon */}
       </Flex>
       {isOpen && <Menu isOpen={isOpen} onClose={onClose} />}
-    </Container>
+    </SectionContainer>
     // Header wrapper ends here
   );
 };

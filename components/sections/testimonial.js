@@ -1,4 +1,5 @@
-import { Box, Container, Grid, GridItem, Text } from '@chakra-ui/react';
+import { Box, Grid, GridItem, Text } from '@chakra-ui/react';
+import SectionContainer from '../layout/container/SectionContainer';
 import TestimonialList from '../testimonial/TestimonialList';
 import SectionTitle from '../ui/title/SectionTitle';
 
@@ -20,16 +21,7 @@ const Testimonial = function () {
       bgRepeat={'no-repeat'}
       bgImage={'url(../../assets/images/testimonial-image.png)'}
     >
-      <Container
-        maxW='container.xl'
-        p='0'
-        px={{
-          xxl: '0',
-          xlg: '5',
-          xl: '5',
-          xsm: '5',
-        }}
-      >
+      <SectionContainer>
         <Grid
           templateColumns={{
             xmd: '1fr 2fr',
@@ -66,7 +58,7 @@ const Testimonial = function () {
             <TestimonialList></TestimonialList>
           </GridItem>
         </Grid>
-      </Container>
+      </SectionContainer>
     </Box>
   );
 };

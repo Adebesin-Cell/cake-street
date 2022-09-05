@@ -1,4 +1,4 @@
-import { Grid, Box, Container } from '@chakra-ui/react';
+import { Grid, Box } from '@chakra-ui/react';
 import Card from '../card/Card';
 import CardImage from '../../assets/images/image--4.png';
 import CardImageOne from '../../assets/images/image--5.png';
@@ -7,21 +7,13 @@ import CardImageThree from '../../assets/images/image--7.png';
 import CardImageFour from '../../assets/images/image--8.png';
 import CardImageFive from '../../assets/images/image--9.png';
 import SectionTitle from '../ui/title/SectionTitle';
+import SectionContainer from '../layout/container/SectionContainer';
 
 // Special Menus section
 const Menus = function () {
   return (
     <Box as='section' pt={{ xl: '32', xsm: '20' }}>
-      <Container
-        maxW='container.xl'
-        p='0'
-        px={{
-          xxl: '0',
-          xlg: '5',
-          xl: '5',
-          xsm: '5',
-        }}
-      >
+      <SectionContainer>
         <SectionTitle text='Special menu' subText='for you' />
         <Grid
           templateColumns={{
@@ -76,7 +68,7 @@ const Menus = function () {
             description='Wafle with Ice cream'
           ></Card>
         </Grid>
-      </Container>
+      </SectionContainer>
     </Box>
   );
 };

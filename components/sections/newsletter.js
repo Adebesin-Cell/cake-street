@@ -1,6 +1,7 @@
-import { Box, Container, Flex, Text } from '@chakra-ui/react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 import NewsletterBg from '../../assets/images/newletter-background.png';
 import IntroBtn from '../intro/IntroBtn';
+import SectionContainer from '../layout/container/SectionContainer';
 import FormInput from '../ui/input/Input';
 import SectionTitle from '../ui/title/SectionTitle';
 
@@ -8,9 +9,7 @@ import SectionTitle from '../ui/title/SectionTitle';
 const NewsLetter = function () {
   return (
     <Box as='section' mt={{ xl: '24', xsm: '16' }} mb={{ xl: '24', xsm: '0' }}>
-      <Container
-        maxW='container.xl'
-        p='0'
+      <SectionContainer
         px={{
           xxl: '0',
           xlg: '5',
@@ -67,7 +66,7 @@ const NewsLetter = function () {
             </IntroBtn>
           </Flex>
         </Flex>
-      </Container>
+      </SectionContainer>
     </Box>
   );
 };

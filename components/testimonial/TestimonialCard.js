@@ -43,7 +43,3 @@ const TestimonialCard = function (props) {
 };
 
 export default TestimonialCard;
-
-// background: #FFCB7C;
-// border: 6px solid rgba(255, 211, 145, 0.62);
-// border-radius: 8px;

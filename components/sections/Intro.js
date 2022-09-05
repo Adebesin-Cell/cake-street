@@ -1,5 +1,4 @@
 import {
-  Container,
   Box,
   Grid,
   GridItem,
@@ -12,6 +11,7 @@ import Header from '../layout/header/Header';
 import Hero from '../../assets/images/hero-img.png';
 import { ShoppingCartIcon } from '../../utils/icons/Icons';
 import IntroBtn from '../intro/IntroBtn';
+import SectionContainer from '../layout/container/SectionContainer';
 
 // Intro section
 const Intro = function () {
@@ -25,15 +25,7 @@ const Intro = function () {
       {/* Header starts here */}
       <Header />
       {/* Header ends here */}
-      <Container
-        maxW='container.xl'
-        p='0'
-        px={{
-          xxl: '0',
-          xlg: '5',
-          xl: '5',
-          xsm: '5',
-        }}
+      <SectionContainer
         pb={{
           xl: 96,
           lg: '20',
@@ -132,7 +124,7 @@ const Intro = function () {
             ></Img>
           </GridItem>
         </Grid>
-      </Container>
+      </SectionContainer>
     </Box>
   );
 };

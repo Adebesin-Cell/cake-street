@@ -1,14 +1,7 @@
-import {
-  Box,
-  Container,
-  Grid,
-  GridItem,
-  Flex,
-  Img,
-  Text,
-} from '@chakra-ui/react';
+import { Box, Grid, GridItem, Flex, Img, Text } from '@chakra-ui/react';
 import AboutImage from '../../assets/images/about-image.png';
 import IntroBtn from '../intro/IntroBtn';
+import SectionContainer from '../layout/container/SectionContainer';
 import SectionTitle from '../ui/title/SectionTitle';
 
 // About Us Section
@@ -31,16 +24,7 @@ const AboutUs = function () {
         w='full'
         ml={{ xmd: '-3', xsm: '0' }}
       >
-        <Container
-          maxW='container.xl'
-          p='0'
-          px={{
-            xxl: '0',
-            xlg: '5',
-            xl: '5',
-            xsm: '5',
-          }}
-        >
+        <SectionContainer>
           <Grid
             templateColumns={{
               xmd: 'repeat(2, 1fr)',
@@ -131,7 +115,7 @@ const AboutUs = function () {
               </Box>
             </GridItem>
           </Grid>
-        </Container>
+        </SectionContainer>
       </Box>
     </Box>
   );

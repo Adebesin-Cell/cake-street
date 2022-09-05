@@ -1,27 +1,16 @@
-import { Box, Container, Grid } from '@chakra-ui/react';
+import { Box, Grid } from '@chakra-ui/react';
 import CardImage from '../../assets/images/image--1.png';
 import CardImageOne from '../../assets/images/image--2.png';
 import CardImageTwo from '../../assets/images/image--3.png';
 import Card from '../card/Card';
+import SectionContainer from '../layout/container/SectionContainer';
 import SectionTitle from '../ui/title/SectionTitle';
 
 // Popular now section
 const Popular = function () {
   return (
     <Box as='section' mt={{ xl: '-96', xsm: '0' }} pt={20} pos='relative'>
-      <Container
-        pos='relative'
-        zIndex={2}
-        maxW='container.xl'
-        p='0'
-        pb={{ xl: '40', xsm: '20' }}
-        px={{
-          xxl: '0',
-          xlg: '5',
-          xl: '5',
-          xsm: '5',
-        }}
-      >
+      <SectionContainer pos='relative' zIndex={2} pb={{ xl: '40', xsm: '20' }}>
         {/* Popular now heading starts here */}
         <SectionTitle text='Popular' subText='Now' />
         {/* Popular now heading ends here */}
@@ -61,7 +50,7 @@ const Popular = function () {
           ></Card>
         </Grid>
         {/* Popular menus grid container */}
-      </Container>
+      </SectionContainer>
       {/* Popular now overlay starts here*/}
       <Box
         pos='absolute'
