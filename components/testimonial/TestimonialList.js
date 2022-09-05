@@ -12,6 +12,7 @@ const TestimonialList = function () {
 
   // Get viewport states
   const mobileMatch = useMediaQuery(600);
+  const portraitTabletMatch = useMediaQuery(990);
   const tabletMatch = useMediaQuery(1024);
 
   // initialize slider start value for desktop
@@ -20,9 +21,12 @@ const TestimonialList = function () {
   if (mobileMatch) {
     // initialize slider start value for mobile screens
     translateValue = 96.5;
+  } else if (portraitTabletMatch) {
+    // initialize slider start value for portrait tablets
+    translateValue = 48;
   } else if (tabletMatch) {
-    // initialize slider start value for tablets
-    translateValue = 45.8;
+    // initialize slider start value for landscape tablets
+    translateValue = 33.333;
   }
 
   const activeBtnStyle = {
